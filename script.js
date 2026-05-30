@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 videoItem.classList.add('video-item');
 
                 // Предполагаем, что у вас есть thumbnail_url или генерируем его
-                const thumbnailUrl = video.thumbnail_url || `https://img.youtube.com/vi/${video.youtube_url.replace("https://www.youtube.com/watch?v=", "")}/hqdefault.jpg`;
+                const thumbnailUrl = video.thumbnail_url || `https://img.youtube.com/vi/${video.youtube_url.replace("https://www.youtube.com/watch?v=", "")}/maxresdefault.jpg`;
 
                 // Создаем шаблон с изображением
                 videoItem.innerHTML = `
