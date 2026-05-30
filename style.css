@@ -127,7 +127,7 @@ h2 {
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid var(--light-gray-stroke);
-    width: 850px; /* фиксированная ширина, чуть больше квадрата */
+    width: 100%;
     max-width: 100%; /* чтобы не выходить за пределы контейнера при адаптиве */
 }
 
@@ -251,4 +251,35 @@ footer {
     background-color: #111;
     font-size: 0.9rem;
     margin-top: 5rem;
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .logo-container {
+        font-size: 1.2rem;
+    }
+
+    .nav-button {
+        font-size: 0.8rem;
+        padding: 6px 8px;
+    }
+
+    #video-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .video-item {
+        width: 100%;
+    }
+
+    #video-container iframe {
+        height: 220px;
+    }
 }
