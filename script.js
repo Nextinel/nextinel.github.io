@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Обработка загрузки видео из JSON
-    fetch('videos.json')
+    fetch('videos.json?v=' + Date.now())
         .then(response => response.json())
         .then(data => {
             const videoGallery = document.getElementById('video-gallery');
